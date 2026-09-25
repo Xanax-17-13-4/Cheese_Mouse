@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://tr7tw56tk1we"]
+
+[ext_resource type="Script" uid="uid://bp2sxb73l4r75" path="res://node_2d.gd" id="1_s0ldm"]
+[ext_resource type="PackedScene" uid="uid://qxit52jjg3pl" path="res://Chedder.tscn" id="2_s0ldm"]
+
+[node name="Cheese" type="Node2D" unique_id=1693849740]
+script = ExtResource("1_s0ldm")
+
+[node name="CharacterBody2D" parent="." unique_id=1950912064 instance=ExtResource("2_s0ldm")]

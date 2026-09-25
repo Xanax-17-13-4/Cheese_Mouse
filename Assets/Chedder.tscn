@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://qxit52jjg3pl"]
+
+[ext_resource type="Texture2D" uid="uid://d04x36j0s2iue" path="res://3d-cheese-emoji-png-1.webp" id="1_0kxte"]
+[ext_resource type="Script" uid="uid://cwx4gnnskcjqp" path="res://character_body_2d.gd" id="1_co0b6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dakjy"]
+size = Vector2(62, 39)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1950912064]
+script = ExtResource("1_co0b6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1777317556]
+position = Vector2(38, 81.5)
+shape = SubResource("RectangleShape2D_dakjy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=615523034]
+position = Vector2(38.249996, 84.5)
+scale = Vector2(0.18802229, 0.15714288)
+texture = ExtResource("1_0kxte")

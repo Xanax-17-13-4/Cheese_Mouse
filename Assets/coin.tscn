@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d00sw3notqj31"]
+
+[ext_resource type="Script" uid="uid://dmhhhd1abmx3d" path="res://coin.gd" id="1_0t63x"]
+[ext_resource type="Texture2D" uid="uid://d04x36j0s2iue" path="res://3d-cheese-emoji-png-1.webp" id="2_v7riw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mrvga"]
+size = Vector2(114, 89)
+
+[node name="Coin" type="Node2D" unique_id=1100450192]
+script = ExtResource("1_0t63x")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1104731356]
+position = Vector2(107.00001, 103)
+scale = Vector2(0.38022283, 0.31142858)
+texture = ExtResource("2_v7riw")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=181043199]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1350559393]
+position = Vector2(108, 99)
+shape = SubResource("RectangleShape2D_mrvga")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
